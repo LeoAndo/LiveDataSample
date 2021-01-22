@@ -30,7 +30,7 @@ class MainFragment : Fragment() {
 
         viewModel.price.observe(viewLifecycleOwner, Observer {
             val textView = view.findViewById<TextView>(R.id.text_message)
-            textView.text = """${it}円"""
+            textView.text = it
         })
     }
 }
